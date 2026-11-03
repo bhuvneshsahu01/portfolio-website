@@ -63,7 +63,7 @@
             <div class="hero-text">
                 <p class="greeting fade-in">Hi, I'm</p>
                 <h2 class="hero-subtitle fade-in">Bhuvnesh Sahu</h2>
-                <h2 class="hero-subtitle fade-in-up delay-1">ML & AI Systems Engineer | LLM Agents, Enterprise RAG & Production ML</h2>
+                <h2 class="hero-subtitle fade-in-up delay-1">ML Engineer (Client: Meta) | LLM Agents, Enterprise RAG & Production ML</h2>
                 <p class="hero-description fade-in-up delay-2">Building production-grade AI systems with LLM Agents, Enterprise Retrieval, Low-Latency Inference, and Statistical Rigor.</p>
                 <div class="hero-cta fade-in-up delay-3">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
@@ -78,7 +78,7 @@
                             </path>
                         </svg>
                     </a>
-                    <a href="https://www.linkedin.com/in/bhuvnesh-sahu01/" target="_blank" class="social-link"
+                    <a href="https://www.linkedin.com/in/bhuvneshsahu01" target="_blank" class="social-link"
                         aria-label="LinkedIn">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -122,21 +122,10 @@
                     </div>
                 </div>
                 <div class="about-text">
-                    <p class="about-intro">I'm Bhuvnesh Sahu — a Data Scientist at Wipro with a strong foundation in
-                        Statistics
-                        and a passion for building production-ready AI systems that solve real-world problems.</p>
-                    <p>Currently, I work on <strong>Agentic AI systems, Intelligent Document Processing (IDP), and
-                            proprietary Computer Vision solutions</strong> at Wipro,
-                        where I develop enterprise-scale AI applications. I'm also pursuing my <strong>Master's in Data
-                            Science</strong> at Chennai Mathematical
-                        Institute, combining rigorous statistical theory with hands-on implementation.</p>
-                    <p>My experience spans <strong>end-to-end ML pipelines</strong> — from data engineering and model
-                        development to deployment and monitoring. I've worked on real-time computer vision systems,
-                        fine-tuned large language models, built RAG applications, and developed hybrid deep learning
-                        architectures.</p>
-                    <p>What excites me is bridging the gap between <strong>research and production</strong> — taking
-                        cutting-edge techniques and making them work reliably in real-world systems with proper testing,
-                        monitoring, and scalability.</p>
+                    <p class="about-intro">I'm <strong>Bhuvnesh Sahu</strong> — Machine Learning Engineer at Wipro (Client: Meta) with a rigorous statistical background from Chennai Mathematical Institute (M.Sc. Data Science) and Hindu College (B.Sc. Hons Statistics). I specialize in building, evaluating, and serving production-grade LLM agents, enterprise retrieval systems, and low-latency ML pipelines.</p>
+                    <p>At <strong>Wipro (Client: Meta)</strong>, I engineer enterprise RAG on Llama Stack (1,200+ daily queries, 84.7% top-5 recall), LLM release-governance agents (Llama 4 Scout auditing 13 controls across 9 portfolios with 100% coverage), two-stage support ticket routers (88% accuracy across 433 queues), and hierarchical OpEx forecasting (4.2% MAPE walk-forward holdouts).</p>
+                    <p>My open-source work centers on rigorous alignment, evaluation, and latency optimization: <strong>VeriCall</strong> (execution-grounded QLoRA SFT + DPO / GRPO for tool calling, cutting hallucinations by 67% and reaching 86.4% accuracy), <strong>TraceGuard</strong> (published <code>traceguard-ai</code> SDK with MMD kernel drift monitoring and 3.0ms p95 guardrails), and <strong>Rankwise</strong> (two-tower + DCN-v2 recommendation with unbiased counterfactual SNIPS evaluation on KuaiRand).</p>
+                    <p>I operate with an <strong>evaluation-first and statistics-trained mindset</strong>: strict forward-time holdouts without post-triage leakage, hypothesis testing (KS, &chi;&sup2;, McNemar), Wilson/bootstrap confidence intervals, and low-latency deployment (vLLM, TensorRT INT8, ONNX Runtime).</p>
                     <div class="about-stats">
                         <div class="stat-item">
                             <h3>8.31</h3>
@@ -172,21 +161,14 @@
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <div class="timeline-date">July 2024 - Present</div>
-                        <h3>Data Scientist</h3>
-                        <h4>Wipro</h4>
+                        <div class="timeline-date">Jul 2025 – Present</div>
+                        <h3>ML Engineer (Client: Meta)</h3>
+                        <h4>Wipro &bull; Bengaluru, India</h4>
                         <ul>
-                            <li>Developing and deploying <strong>Agentic AI systems</strong> using LLM orchestration and
-                                multi-agent architectures</li>
-                            <li>Building <strong>Intelligent Document Processing (IDP)</strong> pipelines for automated
-                                document understanding and extraction</li>
-                            <li>Creating <strong>proprietary Computer Vision solutions</strong> by fine-tuning vision
-                                models for domain-specific tasks</li>
-                            <li>Designing RAG-based applications with vector databases for enterprise knowledge
-                                management</li>
-                            <li>Implementing production-grade ML pipelines with focus on scalability, monitoring, and
-                                deployment</li>
-                            <li>Collaborating with cross-functional teams on AI strategy and production deployment</li>
+                            <li>Shipped incremental ingestion and hybrid retrieval for an enterprise RAG assistant on <strong>Llama Stack</strong> (1,200+ daily queries): structure-preserving parsers for docs, sheets, and slides with SHA-256 change detection reduced re-embedding volume by <strong>75%</strong>, and parent–child chunking with BM25 + dense retrieval and cross-encoder re-ranking raised top-5 recall from 61.4% (dense-only) to <strong>84.7%</strong> (38% relative lift).</li>
+                            <li>Co-designed an LLM release-readiness agent (<strong>Llama 4 Scout</strong>) auditing 13 go-live controls (SOX, privacy, QA, UAT) across 9 product portfolios; paired deterministic risk rules with <strong>Pydantic</strong>-constrained evidence checks over open tasks, unmerged code, and missing sign-offs to auto-publish weekly briefs, expanding review coverage from 7% (manual sampling) to <strong>100%</strong> of releases and reducing reporting time by <strong>60%</strong>.</li>
+                            <li>Trained and deployed a two-stage router for ~1,100 support tickets/day (Account Management gate, then per-branch residual DNNs over dense embeddings across 433 queues); class-weighted focal loss lifted top-1 accuracy from a 40% legacy baseline to <strong>88%</strong> on a forward-time holdout with post-triage leakage features removed, and a temperature-scaled confidence gate auto-routes <strong>68%</strong> of volume at <strong>95%</strong> accuracy with human fallback.</li>
+                            <li>Engineered a hierarchical 12-month OpEx forecasting pipeline (<strong>XGBoost</strong>, seasonal decomposition) across 80+ cost centers; achieved <strong>4.2% MAPE</strong> on walk-forward quarterly holdouts (26% lower error than run-rate baselines) with automated daily variance attribution for Finance.</li>
                         </ul>
                     </div>
                 </div>
@@ -195,19 +177,13 @@
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <div class="timeline-date">Jan 2025 - April 2025</div>
-                        <h3>Gen AI Intern</h3>
-                        <h4>Coriolis</h4>
+                        <div class="timeline-date">Jan 2025 – Apr 2025</div>
+                        <h3>Project Intern – Applied AI (Multi-Agent Systems)</h3>
+                        <h4>Coriolis Technologies &bull; Pune, India</h4>
                         <ul>
-                            <li>Built a system-agnostic AI assistant enabling natural language interaction with any
-                                API-based system</li>
-                            <li>Converted OpenAPI documentation into structured API knowledge base for intelligent
-                                system understanding</li>
-                            <li>Designed LLM-chained pipeline to decompose user intents and generate multi-step
-                                executable workflows</li>
-                            <li>Reduced support team workload by automating repetitive task execution</li>
-                            <li>Implemented robust task orchestration with optimized execution sequencing and
-                                dependency-aware API chaining</li>
+                            <li>Developed a <strong>LangGraph</strong> multi-agent system that plans and executes multi-step workflows across enterprise REST APIs, retrieving top-<i>K</i> endpoint schemas and auth rules at plan time from an embedding index over raw <strong>OpenAPI</strong> specifications instead of loading full specs or hand-writing wrappers.</li>
+                            <li>Orchestrated sub-task routing and <strong>tool calling</strong> via a supervisor agent with strict <strong>Pydantic</strong> schema validation; a 3-attempt self-healing retry loop that feeds validation and execution errors back to the model lifted workflow success from a 64% single-shot baseline to <strong>92%</strong> on a frozen 500-request benchmark.</li>
+                            <li>Reduced end-to-end workflow latency from <strong>14 s to 4 s</strong> with a DAG-based <strong>asyncio</strong> dispatcher that runs independent tool and API calls concurrently; planning ran on a locally hosted <strong>Llama 3.1 8B</strong> model served via <strong>vLLM</strong>.</li>
                         </ul>
                     </div>
                 </div>
@@ -216,19 +192,13 @@
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
-                        <div class="timeline-date">May 2024 - Jul 2024</div>
-                        <h3>Data Science Intern</h3>
-                        <h4>Algolabs</h4>
+                        <div class="timeline-date">May 2024 – Jul 2024</div>
+                        <h3>Machine Learning Intern (Computer Vision & Edge AI)</h3>
+                        <h4>Algolabs &bull; Chennai, India</h4>
                         <ul>
-                            <li>Developed end-to-end computer vision pipeline for real-time crack detection and
-                                segmentation</li>
-                            <li>Created custom dataset using LabelMe, enhancing data quality for model training</li>
-                            <li>Fine-tuned state-of-the-art models (YOLOv8, SAM, Detectron2) on domain-specific data
-                            </li>
-                            <li>Built Streamlit application with REST API and deployed using Docker containerization
-                            </li>
-                            <li>Implemented comparative analysis framework to evaluate model performance on key metrics
-                            </li>
+                            <li>Built a crack instance-segmentation pipeline for 3D-printed building surfaces: curated polygon masks across <strong>430</strong> high-resolution inspection images in LabelMe spanning four severity classes (hairline, thin, wide, deep), using patch tiling to preserve fine crack detail and point-prompted <strong>SAM</strong> proposals with human review to cut annotation time by <strong>~70%</strong>.</li>
+                            <li>Benchmarked <strong>YOLOv8-seg</strong> against <strong>Detectron2</strong> (Mask R-CNN) on a Tesla T4: while Mask R-CNN traced fine branching cracks most cleanly, it ran at 7 FPS, so YOLOv8-seg was selected at <strong>111 FPS</strong> (0.82 precision, 0.78 mask IoU) to meet real-time streaming constraints.</li>
+                            <li>Deployed real-time edge inference via <strong>ONNX</strong> export and post-training <strong>TensorRT INT8</strong> quantization in a <strong>DeepStream</strong> pipeline on NVIDIA Jetson Orin Nano (<strong>35+ FPS</strong>, 2.8&times; over FP32 with &lt;0.01 mask-IoU loss), and shipped a containerized batch inference service on <strong>AWS ECS</strong>.</li>
                         </ul>
                     </div>
                 </div>
@@ -244,9 +214,37 @@
                 <h2 class="section-title">Featured Projects</h2>
             </div>
             <div class="projects-grid">
-                <!-- Project 1: TraceGuard -->
+                <!-- Project 1: VeriCall -->
                 <div class="project-card">
                     <div class="project-number">01</div>
+                    <div class="project-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                            <polyline points="2 17 12 22 22 17"></polyline>
+                            <polyline points="2 12 12 17 22 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3>VeriCall — Execution-Verified Post-Training for Tool Calling</h3>
+                    <p>Post-trained Qwen2.5-7B-Instruct for enterprise REST tool calling using QLoRA SFT and DPO on 3,200 execution-mined near-miss pairs from a 60-endpoint FastAPI sandbox. On 500 requests across 24 held-out endpoints from 4 unseen APIs, execution accuracy rose from 54.2% (base) and 77.6% (SFT) to <strong>86.4%</strong> (95% Wilson CI [83.1%, 89.1%]; paired McNemar <i>p</i> &lt; 0.001 vs. SFT), beating base + constrained decoding (68.4%). Slashed hallucinated parameter errors by <strong>-67% vs. SFT</strong> (58 to 19 of 500) and lifted BFCL AST subset (<i>N</i>=200) from 69.5% to <strong>82.5%</strong>. Online GRPO on Qwen2.5-1.5B lifted accuracy from 61.6% to <strong>74.8%</strong>. Custom completion-sliced PyTorch DPO trainer cut logit memory from 1.83 GB to 18 MB (peak VRAM <strong>6.8 GB</strong> on a single T4). Served on <strong>vLLM</strong> with AWQ quantization retaining 86.0% accuracy at <strong>640 ms p50</strong> latency and 14 req/s (85 ms p50 TTFT on prefix-cache hits).</p>
+                    <div class="project-tags">
+                        <span class="tag">Qwen2.5-7B</span>
+                        <span class="tag">QLoRA SFT</span>
+                        <span class="tag">DPO</span>
+                        <span class="tag">GRPO</span>
+                        <span class="tag">vLLM AWQ</span>
+                        <span class="tag">Tool Calling</span>
+                        <span class="tag">FastAPI Sandbox</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/bhuvneshsahu01/vericall" target="_blank" class="project-link">View on GitHub →</a>
+                        <a href="https://huggingface.co/bhuvneshsahu01/vericall-qwen2.5-7b-dpo" target="_blank" class="project-link" style="margin-left: 12px;">Hugging Face →</a>
+                    </div>
+                </div>
+
+                <!-- Project 2: TraceGuard -->
+                <div class="project-card">
+                    <div class="project-number">02</div>
                     <div class="project-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -254,25 +252,26 @@
                             <path d="m9 12 2 2 4-4"></path>
                         </svg>
                     </div>
-                    <h3>TraceGuard — Agent Observability & Safety Toolkit</h3>
-                    <p>OpenTelemetry-native Python SDK (<code>traceguard-sdk</code> on PyPI) capturing W3C-compliant spans at &lt;2.3ms overhead. Continuous statistical drift engine (PSI, 2-sample KS test p&lt;0.01) with bootstrap CIs, cycle detection for agent loops, and automated 120+ payload adversarial red-teaming (OWASP Top 10, NIST AI RMF) with Llama Guard 3.</p>
+                    <h3>TraceGuard (<code>traceguard-ai</code>) — LLM Drift Monitoring & Guardrails SDK</h3>
+                    <p>Published <code>traceguard-ai</code> on PyPI for statistical LLM traffic monitoring: PSI, KS, and &chi;&sup2; tests on scalar/categorical signals plus permutation-tested kernel <strong>MMD</strong> on prompt/response embeddings with Benjamini–Hochberg FDR control (<strong>3.8%</strong> false-alarm rate under <i>H</i><sub>0</sub> at &alpha;=0.05, and <strong>89.6%</strong> power on 25% out-of-domain semantic shift). Async FastAPI guardrail middleware (regex/Luhn and Presidio PII redaction, TF-IDF prompt-injection screening, token budgets, OpenTelemetry spans) executes at <strong>3.0 ms p95</strong> per 128-token prompt. Achieved <strong>76.7%</strong> (46/60) recall on <code>deepset/prompt-injections</code> with 1 false positive in 56 benign prompts (1.8% FPR), and <strong>71.2%</strong> (712/1,000) OOD recall on <code>Lakera/gandalf_ignore_instructions</code>.</p>
                     <div class="project-tags">
+                        <span class="tag">PyPI: traceguard-ai</span>
                         <span class="tag">OpenTelemetry</span>
-                        <span class="tag">LangGraph</span>
+                        <span class="tag">Kernel MMD</span>
                         <span class="tag">PSI / KS Drift</span>
-                        <span class="tag">Llama Guard 3</span>
-                        <span class="tag">Next.js / Prisma</span>
-                        <span class="tag">PyPI Package</span>
+                        <span class="tag">FastAPI Guardrails</span>
+                        <span class="tag">Presidio PII</span>
+                        <span class="tag">FDR Control</span>
                     </div>
                     <div class="project-links">
                         <a href="https://github.com/bhuvneshsahu01/TraceGuard" target="_blank" class="project-link">View on GitHub →</a>
-                        <a href="https://pypi.org/project/traceguard/" target="_blank" class="project-link" style="margin-left: 12px;">PyPI →</a>
+                        <a href="https://pypi.org/project/traceguard-ai/" target="_blank" class="project-link" style="margin-left: 12px;">PyPI →</a>
                     </div>
                 </div>
 
-                <!-- Project 2: Rankwise -->
+                <!-- Project 3: Rankwise -->
                 <div class="project-card">
-                    <div class="project-number">02</div>
+                    <div class="project-number">03</div>
                     <div class="project-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -281,25 +280,26 @@
                             <line x1="6" y1="20" x2="6" y2="14"></line>
                         </svg>
                     </div>
-                    <h3>Rankwise — Two-Tower Recommender & Experiment Engine</h3>
-                    <p>Two-tower candidate retrieval in PyTorch / TorchRec on MovieLens-25M with log-Q debiasing and FAISS IVF-PQ (14.2x speedup, 95.4% Recall@20 at &lt;8ms p99). DCN-v2 ranker with MMR diversity (+11.8% NDCG@20), offline counterfactual policy evaluation (clipped IPS/SNIPS on KuaiRand), and CUPED-accelerated mSPRT sequential A/B testing (~38% sample reduction).</p>
+                    <h3>Rankwise — Two-Stage Recommender with Counterfactual Evaluation</h3>
+                    <p>Two-stage recommender trained on <strong>KuaiRand-1K</strong> (250k+ videos indexed in FAISS HNSW): deep Two-Tower retriever with in-batch sampled softmax and log-<i>Q</i> popularity debiasing feeding a multi-task <strong>DCN-v2</strong> ranker. Raised held-out unbiased random-exposure NDCG@10 from 0.412 (LightGBM LambdaMART) to <strong>0.448</strong> (paired bootstrap 95% CI [+0.024, +0.048], <i>p</i> &lt; 0.001). Rigorous off-policy counterfactual evaluation against unbiased random-exposure ground truth (<strong>0.182</strong>): naive estimated-propensity IPS overstated value <strong>2.1&times;</strong> (0.384), while propensity-clipped <strong>SNIPS</strong> landed within <strong>6.4% relative error</strong>. Served via FastAPI + Redis feature store + ONNX Runtime with isotonic calibration (ECE 0.068 &rarr; 0.014) at <strong>11.8 ms p95</strong> (24.5 ms p99) and 320 RPS on an 8-core CPU.</p>
                     <div class="project-tags">
-                        <span class="tag">TorchRec</span>
+                        <span class="tag">Two-Tower</span>
                         <span class="tag">DCN-v2</span>
-                        <span class="tag">FAISS IVF-PQ</span>
-                        <span class="tag">CUPED</span>
-                        <span class="tag">mSPRT Testing</span>
-                        <span class="tag">IPS / SNIPS Eval</span>
+                        <span class="tag">FAISS HNSW</span>
+                        <span class="tag">Counterfactual SNIPS</span>
+                        <span class="tag">KuaiRand-1K</span>
+                        <span class="tag">ONNX Runtime</span>
+                        <span class="tag">Isotonic Calibration</span>
                         <span class="tag">FastAPI</span>
                     </div>
                     <div class="project-links">
-                        <a href="https://github.com/bhuvneshsahu01/Rankwise" target="_blank" class="project-link">View on GitHub →</a>
+                        <a href="https://github.com/bhuvneshsahu01/rankwise" target="_blank" class="project-link">View on GitHub →</a>
                     </div>
                 </div>
 
-                <!-- Project 3: OmniDoc -->
+                <!-- Project 4: OmniDoc -->
                 <div class="project-card">
-                    <div class="project-number">03</div>
+                    <div class="project-number">04</div>
                     <div class="project-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -322,33 +322,6 @@
                     </div>
                     <div class="project-links">
                         <a href="https://github.com/bhuvneshsahu01/OmniDoc" target="_blank" class="project-link">View on GitHub →</a>
-                    </div>
-                </div>
-
-                <!-- Project 4: FreeLLM -->
-                <div class="project-card">
-                    <div class="project-number">04</div>
-                    <div class="project-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-                            <line x1="8" y1="21" x2="16" y2="21"></line>
-                            <line x1="12" y1="17" x2="12" y2="21"></line>
-                        </svg>
-                    </div>
-                    <h3>FreeLLM — Multi-Provider Gateway & Resilient Router</h3>
-                    <p>Hexagonal multi-provider LLM gateway distributed on PyPI (<code>freellm</code>). Features automated HTTP 429/503 circuit-breaking with exponential backoff and zero-downtime failover across Groq, Cerebras, and local Ollama instances, backed by Redis semantic vector caching for sub-10ms response reuse.</p>
-                    <div class="project-tags">
-                        <span class="tag">LLM Gateway</span>
-                        <span class="tag">Circuit Breaking</span>
-                        <span class="tag">Redis Cache</span>
-                        <span class="tag">Groq / Cerebras</span>
-                        <span class="tag">PyPI Package</span>
-                        <span class="tag">FastAPI</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/bhuvneshsahu01/FreeLLM" target="_blank" class="project-link">View on GitHub →</a>
-                        <a href="https://pypi.org/project/freellm/" target="_blank" class="project-link" style="margin-left: 12px;">PyPI →</a>
                     </div>
                 </div>
             </div>
@@ -806,77 +779,24 @@
     <section id="education" class="education">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">Background</span>
-                <h2 class="section-title">Education & Certifications</h2>
+                <span class="section-tag">Academic Background</span>
+                <h2 class="section-title">Education</h2>
             </div>
             <div class="education-grid">
                 <div class="education-card">
-                    <div class="education-icon">🎓</div>
-                    <h3>M.Sc. Data Science</h3>
-                    <h4>Chennai Mathematical Institute</h4>
-                    <p class="education-date">2023 - 2025</p>
-                    <p class="education-grade">Grade: 8.31/10.00</p>
+                    <div class="education-date">2023 – 2025</div>
+                    <h3>M.Sc. in Data Science</h3>
+                    <h4>Chennai Mathematical Institute (CMI) &bull; Chennai, India</h4>
+                    <p class="education-score">CGPA: <strong>8.31 / 10.0</strong></p>
+                    <p class="education-desc"><strong>Relevant Coursework:</strong> Statistical Learning Theory, Stochastic Processes, Convex Optimization, Deep Learning.</p>
                 </div>
+
                 <div class="education-card">
-                    <div class="education-icon">🎓</div>
-                    <h3>B.Sc. (Hons) Statistics</h3>
-                    <h4>Hindu College, University of Delhi</h4>
-                    <p class="education-date">2020 - 2023</p>
-                    <p class="education-grade">Grade: 8.7/10.00</p>
-                </div>
-                <div class="education-card">
-                    <div class="education-icon">📚</div>
-                    <h3>Senior Secondary (12th)</h3>
-                    <h4>MPBSE Board</h4>
-                    <p class="education-date">2020</p>
-                    <p class="education-grade">Grade: 94.6%</p>
-                </div>
-                <div class="education-card">
-                    <div class="education-icon">📚</div>
-                    <h3>Secondary (10th)</h3>
-                    <h4>MPBSE Board</h4>
-                    <p class="education-date">2018</p>
-                    <p class="education-grade">Grade: 94%</p>
-                </div>
-            </div>
-            <div class="certifications">
-                <h3>Certifications</h3>
-                <div class="cert-list">
-                    <div class="cert-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="20 6 9 17 4 12"></polyline>
-                        </svg>
-                        <span>Finance and Quantitative Modeling for Analysts - Coursera</span>
-                    </div>
-                    <div class="cert-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="20 6 9 17 4 12"></polyline>
-                        </svg>
-                        <span>Finance Risk Management Specialization - Coursera</span>
-                    </div>
-                    <div class="cert-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="20 6 9 17 4 12"></polyline>
-                        </svg>
-                        <span>Machine Learning Specialization, Andrew NG - Coursera</span>
-                    </div>
-                    <div class="cert-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="20 6 9 17 4 12"></polyline>
-                        </svg>
-                        <span>Advanced Learning Algorithms, Andrew NG - Coursera</span>
-                    </div>
-                    <div class="cert-item">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <polyline points="20 6 9 17 4 12"></polyline>
-                        </svg>
-                        <span>AWS Cloud Solutions Architect Professional Certificate - Coursera</span>
-                    </div>
+                    <div class="education-date">2020 – 2023</div>
+                    <h3>B.Sc. (Hons.) in Statistics</h3>
+                    <h4>Hindu College, University of Delhi &bull; New Delhi, India</h4>
+                    <p class="education-score">CGPA: <strong>8.70 / 10.0</strong></p>
+                    <p class="education-desc"><strong>Honors:</strong> DST INSPIRE Scholar (top 1% of Class XII board).<br><strong>Coursework:</strong> Statistical Inference, Econometrics, Linear Algebra, Real Analysis, Probability Theory.</p>
                 </div>
             </div>
         </div>
@@ -920,7 +840,7 @@
                         </div>
                         <div>
                             <h3>Phone</h3>
-                            <a href="tel:+919407241555">+91-9407241555</a>
+                            <a href="tel:+91-9642684363">+91-9642684363</a>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -937,8 +857,8 @@
                         </div>
                         <div>
                             <h3>LinkedIn</h3>
-                            <a href="https://www.linkedin.com/in/bhuvnesh-sahu01/"
-                                target="_blank">linkedin.com/in/bhuvnesh-sahu01</a>
+                            <a href="https://www.linkedin.com/in/bhuvneshsahu01"
+                                target="_blank">linkedin.com/in/bhuvneshsahu01</a>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -980,7 +900,7 @@
                 <p>&copy; 2025 Bhuvnesh Sahu. Built with passion and precision.</p>
                 <div class="footer-links">
                     <a href="https://github.com/bhuvneshsahu01" target="_blank" aria-label="GitHub">GitHub</a>
-                    <a href="https://www.linkedin.com/in/bhuvnesh-sahu01/" target="_blank"
+                    <a href="https://www.linkedin.com/in/bhuvneshsahu01" target="_blank"
                         aria-label="LinkedIn">LinkedIn</a>
                     <a href="mailto:bhuvneshsahu1234@gmail.com" aria-label="Email">Email</a>
                 </div>
