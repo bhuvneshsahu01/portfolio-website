@@ -122,26 +122,26 @@
                     </div>
                 </div>
                 <div class="about-text">
-                    <p class="about-intro">I'm <strong>Bhuvnesh Sahu</strong> — Machine Learning Engineer at Wipro (Client: Meta) with a rigorous statistical background from Chennai Mathematical Institute (M.Sc. Data Science) and Hindu College (B.Sc. Hons Statistics). I specialize in building, evaluating, and serving production-grade LLM agents, enterprise retrieval systems, and low-latency ML pipelines.</p>
-                    <p>At <strong>Wipro (Client: Meta)</strong>, I engineer enterprise RAG on Llama Stack (1,200+ daily queries, 84.7% top-5 recall), LLM release-governance agents (Llama 4 Scout auditing 13 controls across 9 portfolios with 100% coverage), two-stage support ticket routers (88% accuracy across 433 queues), and hierarchical OpEx forecasting (4.2% MAPE walk-forward holdouts).</p>
-                    <p>My open-source work centers on rigorous alignment, evaluation, and latency optimization: <strong>VeriCall</strong> (execution-grounded QLoRA SFT + DPO / GRPO for tool calling, cutting hallucinations by 67% and reaching 86.4% accuracy), <strong>TraceGuard</strong> (published <code>traceguard-ai</code> SDK with MMD kernel drift monitoring and 3.0ms p95 guardrails), and <strong>Rankwise</strong> (two-tower + DCN-v2 recommendation with unbiased counterfactual SNIPS evaluation on KuaiRand).</p>
-                    <p>I operate with an <strong>evaluation-first and statistics-trained mindset</strong>: strict forward-time holdouts without post-triage leakage, hypothesis testing (KS, &chi;&sup2;, McNemar), Wilson/bootstrap confidence intervals, and low-latency deployment (vLLM, TensorRT INT8, ONNX Runtime).</p>
+                    <p class="about-intro">I'm <strong>Bhuvnesh Sahu</strong> — Machine Learning Engineer building production LLM and ML systems at Wipro (Client: Meta) and in two applied-AI internships: enterprise RAG, tool-calling agents, release-governance automation, calibrated classifiers, and edge computer vision. Statistics-trained and evaluation-first: leakage-checked forward-time holdouts at work; in open source, QLoRA/DPO/GRPO post-training for tool calling, statistical drift monitoring for LLM traffic, and counterfactual ranking evaluation.</p>
+                    <p>At <strong>Wipro (Client: Meta)</strong>, I engineer incremental ingestion & hybrid retrieval for an enterprise RAG assistant on Llama Stack (1,200+ daily queries, 84.7% top-5 recall), co-designed Llama 4 Scout auditing 13 release controls with 100% coverage, deployed two-stage support ticket routing (88% accuracy across 433 queues), and built hierarchical OpEx forecasting (4.2% MAPE walk-forward holdouts).</p>
+                    <p>In open source, I author production-grade ML frameworks with mathematical and statistical rigor: <strong>VeriCall</strong> (execution-verified QLoRA SFT + DPO/GRPO tool calling reaching 86.4% unseen accuracy and -67% hallucinations), <strong>TraceGuard</strong> (published <code>traceguard-ai</code> SDK with permutation-tested kernel MMD drift detection and 3.0ms p95 guardrails), and <strong>Rankwise</strong> (two-stage Two-Tower + DCN-v2 recommendation with counterfactual SNIPS evaluation on KuaiRand).</p>
+                    <p>My academic foundation is rooted in mathematical statistics: Master of Science in Data Science from <strong>Chennai Mathematical Institute (CMI)</strong> and Bachelor of Science (Honours) in Statistics from <strong>Hindu College, University of Delhi</strong> (DST INSPIRE Scholar, top 1%).</p>
                     <div class="about-stats">
                         <div class="stat-item">
                             <h3>8.31</h3>
-                            <p>M.Sc. CGPA</p>
+                            <p>M.Sc. CGPA (CMI)</p>
                         </div>
                         <div class="stat-item">
-                            <h3>8.7</h3>
-                            <p>B.Sc. CGPA</p>
+                            <h3>8.70</h3>
+                            <p>B.Sc. CGPA (Hindu)</p>
                         </div>
                         <div class="stat-item">
-                            <h3>1+</h3>
-                            <p>Years Exp.</p>
+                            <h3>Top 1%</h3>
+                            <p>DST INSPIRE Scholar</p>
                         </div>
                         <div class="stat-item">
-                            <h3>10+</h3>
-                            <p>Projects</p>
+                            <h3>30+</h3>
+                            <p>Open Source Repos</p>
                         </div>
                     </div>
                 </div>
@@ -157,7 +157,7 @@
                 <h2 class="section-title">Professional Experience</h2>
             </div>
             <div class="timeline">
-                <!-- Wipro - Current Role -->
+                <!-- Wipro (Client: Meta) -->
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
@@ -165,7 +165,7 @@
                         <h3>ML Engineer (Client: Meta)</h3>
                         <h4>Wipro &bull; Bengaluru, India</h4>
                         <ul>
-                            <li>Shipped incremental ingestion and hybrid retrieval for an enterprise RAG assistant on <strong>Llama Stack</strong> (1,200+ daily queries): structure-preserving parsers for docs, sheets, and slides with SHA-256 change detection reduced re-embedding volume by <strong>75%</strong>, and parent–child chunking with BM25 + dense retrieval and cross-encoder re-ranking raised top-5 recall from 61.4% (dense-only) to <strong>84.7%</strong> (38% relative lift).</li>
+                            <li>Shipped incremental ingestion and hybrid retrieval for an enterprise RAG assistant on <strong>Llama Stack</strong> (1,200+ daily queries): structure-preserving parsers for docs, sheets, and slides with SHA-256 change detection reduced re-embedding volume by <strong>75%</strong>, and parent–child chunking with BM25 + dense retrieval and cross-encoder re-ranking raised top-5 recall from 61.4% (dense-only) to <strong>84.7%</strong> (38% relative).</li>
                             <li>Co-designed an LLM release-readiness agent (<strong>Llama 4 Scout</strong>) auditing 13 go-live controls (SOX, privacy, QA, UAT) across 9 product portfolios; paired deterministic risk rules with <strong>Pydantic</strong>-constrained evidence checks over open tasks, unmerged code, and missing sign-offs to auto-publish weekly briefs, expanding review coverage from 7% (manual sampling) to <strong>100%</strong> of releases and reducing reporting time by <strong>60%</strong>.</li>
                             <li>Trained and deployed a two-stage router for ~1,100 support tickets/day (Account Management gate, then per-branch residual DNNs over dense embeddings across 433 queues); class-weighted focal loss lifted top-1 accuracy from a 40% legacy baseline to <strong>88%</strong> on a forward-time holdout with post-triage leakage features removed, and a temperature-scaled confidence gate auto-routes <strong>68%</strong> of volume at <strong>95%</strong> accuracy with human fallback.</li>
                             <li>Engineered a hierarchical 12-month OpEx forecasting pipeline (<strong>XGBoost</strong>, seasonal decomposition) across 80+ cost centers; achieved <strong>4.2% MAPE</strong> on walk-forward quarterly holdouts (26% lower error than run-rate baselines) with automated daily variance attribution for Finance.</li>
@@ -173,7 +173,7 @@
                     </div>
                 </div>
 
-                <!-- Coriolis Internship -->
+                <!-- Coriolis Technologies -->
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
@@ -181,14 +181,14 @@
                         <h3>Project Intern – Applied AI (Multi-Agent Systems)</h3>
                         <h4>Coriolis Technologies &bull; Pune, India</h4>
                         <ul>
-                            <li>Developed a <strong>LangGraph</strong> multi-agent system that plans and executes multi-step workflows across enterprise REST APIs, retrieving top-<i>K</i> endpoint schemas and auth rules at plan time from an embedding index over raw <strong>OpenAPI</strong> specifications instead of loading full specs or hand-writing wrappers.</li>
+                            <li>Developed a <strong>LangGraph</strong> multi-agent system that plans and executes multi-step workflows across enterprise REST APIs, retrieving top-$K$ endpoint schemas and auth rules at plan time from an embedding index over raw <strong>OpenAPI</strong> specifications instead of loading full specs or hand-writing wrappers.</li>
                             <li>Orchestrated sub-task routing and <strong>tool calling</strong> via a supervisor agent with strict <strong>Pydantic</strong> schema validation; a 3-attempt self-healing retry loop that feeds validation and execution errors back to the model lifted workflow success from a 64% single-shot baseline to <strong>92%</strong> on a frozen 500-request benchmark.</li>
                             <li>Reduced end-to-end workflow latency from <strong>14 s to 4 s</strong> with a DAG-based <strong>asyncio</strong> dispatcher that runs independent tool and API calls concurrently; planning ran on a locally hosted <strong>Llama 3.1 8B</strong> model served via <strong>vLLM</strong>.</li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Algolabs Internship -->
+                <!-- Algolabs -->
                 <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
@@ -226,7 +226,7 @@
                         </svg>
                     </div>
                     <h3>VeriCall — Execution-Verified Post-Training for Tool Calling</h3>
-                    <p>Post-trained Qwen2.5-7B-Instruct for enterprise REST tool calling using QLoRA SFT and DPO on 3,200 execution-mined near-miss pairs from a 60-endpoint FastAPI sandbox. On 500 requests across 24 held-out endpoints from 4 unseen APIs, execution accuracy rose from 54.2% (base) and 77.6% (SFT) to <strong>86.4%</strong> (95% Wilson CI [83.1%, 89.1%]; paired McNemar <i>p</i> &lt; 0.001 vs. SFT), beating base + constrained decoding (68.4%). Slashed hallucinated parameter errors by <strong>-67% vs. SFT</strong> (58 to 19 of 500) and lifted BFCL AST subset (<i>N</i>=200) from 69.5% to <strong>82.5%</strong>. Online GRPO on Qwen2.5-1.5B lifted accuracy from 61.6% to <strong>74.8%</strong>. Custom completion-sliced PyTorch DPO trainer cut logit memory from 1.83 GB to 18 MB (peak VRAM <strong>6.8 GB</strong> on a single T4). Served on <strong>vLLM</strong> with AWQ quantization retaining 86.0% accuracy at <strong>640 ms p50</strong> latency and 14 req/s (85 ms p50 TTFT on prefix-cache hits).</p>
+                    <p>Post-trained Qwen2.5-7B-Instruct for REST tool calling with <strong>QLoRA</strong> SFT, then <strong>DPO</strong> on 3,200 execution-mined near-miss pairs from a 60-endpoint FastAPI sandbox (36 training endpoints, 24 held-out endpoints from 4 unseen APIs). On 500 requests across the 24 held-out endpoints, execution accuracy rose from 54.2% (base) and 77.6% (SFT) to <strong>86.4%</strong> (95% Wilson CI [83.1%, 89.1%]; paired McNemar <i>p</i> &lt; 0.001 vs. SFT), ahead of base + constrained decoding (68.4%). Slashed requests with a hallucinated parameter by <strong>-67% vs. SFT</strong> (58 to 19 of 500) and raised BFCL multiple-function AST accuracy (<i>N</i>=200) from 69.5% to <strong>82.5%</strong>. A follow-up online <strong>GRPO</strong> run (binary execution reward, <i>G</i>=8, &beta;=0.04) lifted Qwen2.5-1.5B-Instruct from 61.6% (SFT) to <strong>74.8%</strong>. Engineered a completion-sliced PyTorch DPO trainer with precomputed reference log-probabilities, reducing logit memory from 1.83 GB to 18 MB (-99%) and peak VRAM to <strong>6.8 GB</strong> on a 16 GB T4 (standard TRL ran out of memory). Served the AWQ-quantized merged model on <strong>vLLM</strong> (86.0% accuracy retained) at <strong>640 ms p50</strong> end-to-end and 14 req/s on one T4 with a fixed, prefix-cached tool set (85 ms p50 TTFT; 380 ms uncached).</p>
                     <div class="project-tags">
                         <span class="tag">Qwen2.5-7B</span>
                         <span class="tag">QLoRA SFT</span>
@@ -253,7 +253,7 @@
                         </svg>
                     </div>
                     <h3>TraceGuard (<code>traceguard-ai</code>) — LLM Drift Monitoring & Guardrails SDK</h3>
-                    <p>Published <code>traceguard-ai</code> on PyPI for statistical LLM traffic monitoring: PSI, KS, and &chi;&sup2; tests on scalar/categorical signals plus permutation-tested kernel <strong>MMD</strong> on prompt/response embeddings with Benjamini–Hochberg FDR control (<strong>3.8%</strong> false-alarm rate under <i>H</i><sub>0</sub> at &alpha;=0.05, and <strong>89.6%</strong> power on 25% out-of-domain semantic shift). Async FastAPI guardrail middleware (regex/Luhn and Presidio PII redaction, TF-IDF prompt-injection screening, token budgets, OpenTelemetry spans) executes at <strong>3.0 ms p95</strong> per 128-token prompt. Achieved <strong>76.7%</strong> (46/60) recall on <code>deepset/prompt-injections</code> with 1 false positive in 56 benign prompts (1.8% FPR), and <strong>71.2%</strong> (712/1,000) OOD recall on <code>Lakera/gandalf_ignore_instructions</code>.</p>
+                    <p>Published <code>traceguard-ai</code> on <strong>PyPI</strong> (Pytest, GitHub Actions CI) for LLM traffic drift detection: PSI, KS, and &chi;&sup2; checks on scalar and categorical signals plus permutation-tested kernel <strong>MMD</strong> on prompt/response embeddings with Benjamini–Hochberg FDR control across <i>p</i>-value tests; measured a <strong>3.8%</strong> false-alarm rate under <i>H</i><sub>0</sub> (&alpha;=0.05) and <strong>89.6%</strong> power on a 25% out-of-domain semantic shift. Implemented async FastAPI guardrail middleware (regex/Luhn and Presidio pattern-based PII redaction, TF-IDF + heuristic prompt-injection screening, token budgets, OpenTelemetry spans) adding <strong>3.0 ms p95</strong> per 128-token prompt; caught <strong>76.7%</strong> (46/60) of injections on <code>deepset/prompt-injections</code> with 1 false positive in 56 benign prompts (1.8% FPR), and <strong>71.2%</strong> (712/1,000) out of distribution on <code>Lakera/gandalf_ignore_instructions</code>.</p>
                     <div class="project-tags">
                         <span class="tag">PyPI: traceguard-ai</span>
                         <span class="tag">OpenTelemetry</span>
@@ -281,7 +281,7 @@
                         </svg>
                     </div>
                     <h3>Rankwise — Two-Stage Recommender with Counterfactual Evaluation</h3>
-                    <p>Two-stage recommender trained on <strong>KuaiRand-1K</strong> (250k+ videos indexed in FAISS HNSW): deep Two-Tower retriever with in-batch sampled softmax and log-<i>Q</i> popularity debiasing feeding a multi-task <strong>DCN-v2</strong> ranker. Raised held-out unbiased random-exposure NDCG@10 from 0.412 (LightGBM LambdaMART) to <strong>0.448</strong> (paired bootstrap 95% CI [+0.024, +0.048], <i>p</i> &lt; 0.001). Rigorous off-policy counterfactual evaluation against unbiased random-exposure ground truth (<strong>0.182</strong>): naive estimated-propensity IPS overstated value <strong>2.1&times;</strong> (0.384), while propensity-clipped <strong>SNIPS</strong> landed within <strong>6.4% relative error</strong>. Served via FastAPI + Redis feature store + ONNX Runtime with isotonic calibration (ECE 0.068 &rarr; 0.014) at <strong>11.8 ms p95</strong> (24.5 ms p99) and 320 RPS on an 8-core CPU.</p>
+                    <p>Trained a two-stage recommender on <strong>KuaiRand-1K</strong> (250k+ videos after filtering): a <strong>Two-Tower</strong> retriever (in-batch softmax with log-<i>Q</i> correction, FAISS HNSW) feeding a multi-task <strong>DCN-v2</strong> ranker that raised NDCG@10 on held-out unbiased random-exposure traffic from 0.412 (LightGBM LambdaMART) to <strong>0.448</strong> (paired bootstrap 95% CI [+0.024, +0.048], <i>p</i> &lt; 0.001). Evaluated off-policy estimators against that unbiased ground truth: naive estimated-propensity IPS overstated policy value <strong>2.1&times;</strong> (0.384 vs. 0.182), while propensity-clipped <strong>SNIPS</strong> landed within <strong>6.4% relative error</strong>; served the stack behind <strong>FastAPI</strong> (log-replayed Redis store, ONNX Runtime, isotonic calibration lowering ECE from 0.068 to 0.014) at <strong>11.8 ms p95</strong> (24.5 ms p99) and 320 RPS on an 8-core CPU over a 5-minute load test.</p>
                     <div class="project-tags">
                         <span class="tag">Two-Tower</span>
                         <span class="tag">DCN-v2</span>
@@ -294,34 +294,6 @@
                     </div>
                     <div class="project-links">
                         <a href="https://github.com/bhuvneshsahu01/rankwise" target="_blank" class="project-link">View on GitHub →</a>
-                    </div>
-                </div>
-
-                <!-- Project 4: OmniDoc -->
-                <div class="project-card">
-                    <div class="project-number">04</div>
-                    <div class="project-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                            <polyline points="14 2 14 8 20 8"></polyline>
-                            <line x1="16" y1="13" x2="8" y2="13"></line>
-                            <line x1="16" y1="17" x2="8" y2="17"></line>
-                            <polyline points="10 9 9 9 8 9"></polyline>
-                        </svg>
-                    </div>
-                    <h3>OmniDoc — Layout-Aware Enterprise RAG for SEC 10-K</h3>
-                    <p>Layout-aware document intelligence and hybrid RAG over financial filings. Features Table-Transformer structural extraction, small-to-big parent-child chunking, Qdrant hybrid retrieval (dense + BM25 RRF), BGE-Reranker-Large cross-encoding, and DSPy compiled prompt signatures. Lifted Top-5 recall from 41.0% to 89.2% and FinanceBench accuracy from 59% to 84%.</p>
-                    <div class="project-tags">
-                        <span class="tag">Layout RAG</span>
-                        <span class="tag">Table-Transformer</span>
-                        <span class="tag">Qdrant Hybrid</span>
-                        <span class="tag">DSPy Compilation</span>
-                        <span class="tag">BGE Reranker</span>
-                        <span class="tag">FinanceBench</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/bhuvneshsahu01/OmniDoc" target="_blank" class="project-link">View on GitHub →</a>
                     </div>
                 </div>
             </div>
@@ -625,10 +597,11 @@
     <section id="skills" class="skills">
         <div class="container">
             <div class="section-header">
-                <span class="section-tag">My Expertise</span>
-                <h2 class="section-title">Skills & Technologies</h2>
+                <span class="section-tag">Capabilities</span>
+                <h2 class="section-title">Technical Skills</h2>
             </div>
             <div class="skills-grid">
+                <!-- Category 1: Languages & Tools -->
                 <div class="skill-category">
                     <div class="skill-category-icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
@@ -637,138 +610,117 @@
                             <polyline points="8 6 2 12 8 18"></polyline>
                         </svg>
                     </div>
-                    <h3>Machine Learning</h3>
+                    <h3>Languages & Tools</h3>
                     <div class="skill-items">
-                        <span class="skill-item">Supervised Learning</span>
-                        <span class="skill-item">Unsupervised Learning</span>
-                        <span class="skill-item">Random Forest</span>
-                        <span class="skill-item">XGBoost</span>
-                        <span class="skill-item">SVM</span>
-                        <span class="skill-item">KNN</span>
-                        <span class="skill-item">Naive Bayes</span>
-                        <span class="skill-item">Feature Engineering</span>
-                        <span class="skill-item">Ensembles</span>
-                        <span class="skill-item">PCA</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="skill-category-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path
-                                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
-                            </path>
-                        </svg>
-                    </div>
-                    <h3>Deep Learning & Gen-AI</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">PyTorch</span>
-                        <span class="skill-item">TensorFlow</span>
-                        <span class="skill-item">Keras</span>
-                        <span class="skill-item">CNN</span>
-                        <span class="skill-item">ANN</span>
-                        <span class="skill-item">Transformers</span>
-                        <span class="skill-item">Q LorA</span>
-                        <span class="skill-item">PEFT</span>
-                        <span class="skill-item">LLM Fine-tuning</span>
-                        <span class="skill-item">Embeddings</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="skill-category-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                            <circle cx="8.5" cy="8.5" r="1.5"></circle>
-                            <polyline points="21 15 16 10 5 21"></polyline>
-                        </svg>
-                    </div>
-                    <h3>Computer Vision</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">YOLOv8</span>
-                        <span class="skill-item">SAM</span>
-                        <span class="skill-item">Detectron2</span>
-                        <span class="skill-item">OpenCV</span>
-                        <span class="skill-item">Image Segmentation</span>
-                        <span class="skill-item">Object Detection</span>
-                        <span class="skill-item">Real-time Inference</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="skill-category-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-                        </svg>
-                    </div>
-                    <h3>NLP / LLM</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">LLaMA 3.1</span>
-                        <span class="skill-item">BART</span>
-                        <span class="skill-item">DistilBERT</span>
-                        <span class="skill-item">HuggingFace</span>
-                        <span class="skill-item">LangChain</span>
-                        <span class="skill-item">LangGraph</span>
-                        <span class="skill-item">RAG</span>
-                        <span class="skill-item">Fine-tuning</span>
-                        <span class="skill-item">Prompt Engineering</span>
-                        <span class="skill-item">NLTK</span>
-                        <span class="skill-item">SpaCy</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="skill-category-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="12" y1="20" x2="12" y2="10"></line>
-                            <line x1="18" y1="20" x2="18" y2="4"></line>
-                            <line x1="6" y1="20" x2="6" y2="16"></line>
-                        </svg>
-                    </div>
-                    <h3>Statistics</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Hypothesis Testing</span>
-                        <span class="skill-item">ANOVA</span>
-                        <span class="skill-item">A/B Testing</span>
-                        <span class="skill-item">Bootstrap</span>
-                        <span class="skill-item">CLT</span>
-                        <span class="skill-item">Probability Theory</span>
-                        <span class="skill-item">Time Series</span>
-                        <span class="skill-item">Econometrics</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="skill-category-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="2" width="20" height="8" rx="2" ry="2"></rect>
-                            <rect x="2" y="14" width="20" height="8" rx="2" ry="2"></rect>
-                            <line x1="6" y1="6" x2="6.01" y2="6"></line>
-                            <line x1="6" y1="18" x2="6.01" y2="18"></line>
-                        </svg>
-                    </div>
-                    <h3>Tools & Engineering</h3>
-                    <div class="skill-items">
-                        <span class="skill-item">Python</span>
+                        <span class="skill-item">Python (asyncio)</span>
                         <span class="skill-item">SQL</span>
                         <span class="skill-item">R</span>
-                        <span class="skill-item">C</span>
-                        <span class="skill-item">Docker</span>
-                        <span class="skill-item">Kubernetes</span>
+                        <span class="skill-item">Bash</span>
+                        <span class="skill-item">Linux</span>
                         <span class="skill-item">Git</span>
-                        <span class="skill-item">Streamlit</span>
-                        <span class="skill-item">Gradio</span>
+                        <span class="skill-item">Pytest</span>
+                    </div>
+                </div>
+
+                <!-- Category 2: LLMs & Agents -->
+                <div class="skill-category">
+                    <div class="skill-category-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                        </svg>
+                    </div>
+                    <h3>LLMs & Agents</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">PyTorch</span>
+                        <span class="skill-item">Transformers</span>
+                        <span class="skill-item">TRL & PEFT</span>
+                        <span class="skill-item">bitsandbytes</span>
+                        <span class="skill-item">QLoRA</span>
+                        <span class="skill-item">DPO</span>
+                        <span class="skill-item">GRPO</span>
+                        <span class="skill-item">vLLM</span>
+                        <span class="skill-item">LangGraph</span>
+                        <span class="skill-item">Llama Stack</span>
+                        <span class="skill-item">Pydantic</span>
+                        <span class="skill-item">RAG</span>
+                        <span class="skill-item">Tool Calling</span>
+                    </div>
+                </div>
+
+                <!-- Category 3: ML, Ranking & Retrieval -->
+                <div class="skill-category">
+                    <div class="skill-category-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="20" x2="18" y2="10"></line>
+                            <line x1="12" y1="20" x2="12" y2="4"></line>
+                            <line x1="6" y1="20" x2="6" y2="14"></line>
+                        </svg>
+                    </div>
+                    <h3>ML, Ranking & Retrieval</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Two-Tower</span>
+                        <span class="skill-item">DCN-v2</span>
+                        <span class="skill-item">LightGBM (LambdaMART)</span>
+                        <span class="skill-item">XGBoost</span>
+                        <span class="skill-item">FAISS (HNSW)</span>
+                        <span class="skill-item">BM25 / Hybrid Search</span>
+                        <span class="skill-item">Cross-Encoders</span>
+                        <span class="skill-item">Scikit-learn</span>
+                        <span class="skill-item">Calibration (Temperature Scaling, Isotonic)</span>
+                        <span class="skill-item">Time-Series Forecasting</span>
+                    </div>
+                </div>
+
+                <!-- Category 4: Statistics & Evaluation -->
+                <div class="skill-category">
+                    <div class="skill-category-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M16 12l-4-4-4 4"></path>
+                            <path d="M12 16V8"></path>
+                        </svg>
+                    </div>
+                    <h3>Statistics & Evaluation</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">Hypothesis Testing (KS, &chi;&sup2;, McNemar)</span>
+                        <span class="skill-item">Bootstrap & Wilson CIs</span>
+                        <span class="skill-item">Kernel MMD</span>
+                        <span class="skill-item">PSI</span>
+                        <span class="skill-item">Benjamini–Hochberg FDR</span>
+                        <span class="skill-item">Counterfactual Evaluation (IPS / SNIPS)</span>
+                        <span class="skill-item">Walk-Forward Quarterly Validation</span>
+                    </div>
+                </div>
+
+                <!-- Category 5: Vision, Edge & Infra -->
+                <div class="skill-category">
+                    <div class="skill-category-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                    </div>
+                    <h3>Vision, Edge & Infra</h3>
+                    <div class="skill-items">
+                        <span class="skill-item">YOLOv8-seg</span>
+                        <span class="skill-item">Detectron2 (Mask R-CNN)</span>
+                        <span class="skill-item">SAM</span>
+                        <span class="skill-item">ONNX Runtime</span>
+                        <span class="skill-item">TensorRT (INT8)</span>
+                        <span class="skill-item">DeepStream</span>
+                        <span class="skill-item">NVIDIA Jetson</span>
                         <span class="skill-item">FastAPI</span>
-                        <span class="skill-item">AWS</span>
-                        <span class="skill-item">MongoDB</span>
-                        <span class="skill-item">PostgreSQL</span>
-                        <span class="skill-item">Neo4j</span>
-                        <span class="skill-item">MLOps</span>
+                        <span class="skill-item">Docker</span>
+                        <span class="skill-item">AWS ECS</span>
+                        <span class="skill-item">Redis</span>
+                        <span class="skill-item">OpenTelemetry</span>
+                        <span class="skill-item">Microsoft Presidio</span>
+                        <span class="skill-item">GitHub Actions CI/CD</span>
                     </div>
                 </div>
             </div>
@@ -879,7 +831,7 @@
                 </div>
                 <div class="resume-download">
                     <h3>Download My Resume</h3>
-                    <a href="Bhuvnesh_CV_.pdf" download class="btn btn-primary">
+                    <a href="Bhuvnesh_Sahu_ML_Engineer_CV.pdf" download="Bhuvnesh_Sahu_ML_Engineer_CV.pdf" class="btn btn-primary">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
