@@ -56,6 +56,17 @@ class TestPortfolioWebsite(unittest.TestCase):
             self.assertIn(token, self.html)
         self.assertIn('class="benchmark-table"', self.html)
         self.assertIn("pip install traceguard-ai", self.html)
+        
+        # Guard additional domain projects and repositories
+        for add_proj in [
+            "Multi-Doc RAG Chatbot",
+            "Real-Time Crack Detection",
+            "Email/SMS Spam Classifier",
+            "Credit Risk Modelling",
+            "WhatsApp Chat Analyzer",
+            "Social Network Backend",
+        ]:
+            self.assertIn(add_proj, self.html)
 
     def test_experience_and_education_integrity(self):
         self.assertNotIn("top-$K$", self.html)
