@@ -36,8 +36,8 @@
             </a>
             <div class="nav-links" id="nav-links">
                 <a href="#home" class="nav-link active">Overview</a>
-                <a href="#projects" class="nav-link">Systems</a>
                 <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Systems</a>
                 <a href="#education" class="nav-link">Education &amp; Stack</a>
                 <a href="#about" class="nav-link">Philosophy</a>
                 <a href="#contact" class="nav-link">Contact</a>
@@ -168,7 +168,93 @@
         </div>
     </section>
 
-    <!-- 2. Featured Engineering Systems (#projects) -->
+    <!-- 2. Production Experience (#experience) -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Production Track Record</span>
+                <h2 class="section-title">Professional Experience</h2>
+            </div>
+
+            <div class="timeline">
+                <!-- Wipro (Client: Meta) -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="role-title">ML Engineer (Client: Meta)</h3>
+                                <p class="company-name">Wipro • Bengaluru, India</p>
+                            </div>
+                            <span class="timeline-date">Jul 2025 – Present</span>
+                        </div>
+                        <div class="role-kpi-bar">
+                            <span class="role-kpi">84.7% Top-5 Recall (+38% rel.)</span>
+                            <span class="role-kpi">100% Release Audit Coverage</span>
+                            <span class="role-kpi">88% Router Top-1 Acc (433 Queues)</span>
+                            <span class="role-kpi">4.2% Walk-Forward OpEx MAPE</span>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li>Shipped incremental ingestion and hybrid retrieval for an enterprise RAG assistant on <strong>Llama Stack</strong> (1,200+ daily queries): structure-preserving parsers for docs, sheets, and slides with SHA-256 change detection reduced re-embedding volume by <strong>75%</strong>, and parent–child chunking with BM25 + dense retrieval and cross-encoder re-ranking raised top-5 recall from 61.4% (dense-only) to <strong>84.7%</strong> (38% relative).</li>
+                            <li>Co-designed an LLM release-readiness agent (<strong>Llama 4 Scout</strong>) auditing 13 go-live controls (SOX, privacy, QA, UAT) across 9 product portfolios; paired deterministic risk rules with <strong>Pydantic</strong>-constrained evidence checks over open tasks, unmerged code, and missing sign-offs to auto-publish weekly briefs, expanding review coverage from 7% (manual sampling) to <strong>100%</strong> of releases and reducing reporting time by <strong>60%</strong>.</li>
+                            <li>Trained and deployed a two-stage router for ~1,100 support tickets/day (Account Management gate, then per-branch residual DNNs over dense embeddings across 433 queues). Class-weighted focal loss lifted top-1 accuracy from a 40% legacy baseline to <strong>88%</strong> on a forward-time holdout with post-triage leakage features removed, while a temperature-scaled confidence gate auto-routes <strong>68%</strong> of volume at <strong>95%</strong> accuracy with human fallback.</li>
+                            <li>Engineered a hierarchical 12-month OpEx forecasting pipeline (<strong>XGBoost</strong>, seasonal decomposition) across 80+ cost centers, achieving <strong>4.2% MAPE</strong> on walk-forward quarterly holdouts (26% lower error than run-rate baselines) with automated daily variance attribution for Finance.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Coriolis Technologies -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="role-title">Project Intern — Applied AI (Multi-Agent Systems)</h3>
+                                <p class="company-name">Coriolis Technologies • Pune, India</p>
+                            </div>
+                            <span class="timeline-date">Jan 2025 – Apr 2025</span>
+                        </div>
+                        <div class="role-kpi-bar">
+                            <span class="role-kpi">64% → 92% Multi-Step Workflow Success</span>
+                            <span class="role-kpi">14 s → 4 s DAG Asyncio Latency</span>
+                            <span class="role-kpi">Llama 3.1 8B on vLLM</span>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li>Developed a <strong>LangGraph</strong> multi-agent system that plans and executes multi-step workflows across enterprise REST APIs, retrieving top-<i>K</i> endpoint schemas and auth rules at plan time from an embedding index over raw <strong>OpenAPI</strong> specifications instead of loading full specs or hand-writing wrappers.</li>
+                            <li>Orchestrated sub-task routing and <strong>tool calling</strong> via a supervisor agent with strict <strong>Pydantic</strong> schema validation; a 3-attempt self-healing retry loop that feeds validation and execution errors back to the model lifted workflow success from a 64% single-shot baseline to <strong>92%</strong> on a frozen 500-request benchmark.</li>
+                            <li>Reduced end-to-end workflow latency from <strong>14 s to 4 s</strong> with a DAG-based <strong>asyncio</strong> dispatcher that runs independent tool and API calls concurrently; planning ran on a locally hosted <strong>Llama 3.1 8B</strong> model served via <strong>vLLM</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Algolabs -->
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3 class="role-title">Machine Learning Intern (Computer Vision &amp; Edge AI)</h3>
+                                <p class="company-name">Algolabs • Chennai, India</p>
+                            </div>
+                            <span class="timeline-date">May 2024 – Jul 2024</span>
+                        </div>
+                        <div class="role-kpi-bar">
+                            <span class="role-kpi">~70% Faster Annotation via SAM</span>
+                            <span class="role-kpi">111 FPS YOLOv8-seg (0.78 Mask IoU)</span>
+                            <span class="role-kpi">35+ FPS Jetson Orin Nano INT8 (2.8×)</span>
+                        </div>
+                        <ul class="timeline-bullets">
+                            <li>Built a crack instance-segmentation pipeline for 3D-printed building surfaces: curated polygon masks across <strong>430</strong> high-resolution inspection images in LabelMe (four severity classes: hairline, thin, wide, deep), using patch tiling to preserve fine detail and point-prompted <strong>SAM</strong> proposals with human review to cut annotation time by <strong>~70%</strong>.</li>
+                            <li>Benchmarked <strong>YOLOv8-seg</strong> against <strong>Detectron2</strong> (Mask R-CNN) on Tesla T4: Mask R-CNN traced fine branching cracks more cleanly but ran at 7 FPS, so selected YOLOv8-seg at <strong>111 FPS</strong> (0.82 precision, 0.78 mask IoU) for real-time streaming.</li>
+                            <li>Deployed real-time edge inference via <strong>ONNX</strong> and post-training <strong>TensorRT INT8</strong> quantization in <strong>DeepStream</strong> on NVIDIA Jetson Orin Nano (<strong>35+ FPS</strong>, 2.8&times; over FP32, &lt;0.01 mask-IoU loss), alongside a containerized batch service on <strong>AWS ECS</strong>.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Featured Engineering Systems (#projects) -->
     <section id="projects" class="projects section">
         <div class="container">
             <div class="section-header">
@@ -875,92 +961,6 @@ report = monitor.evaluate(live_prompts, live_embeddings)  # 89.6% power @ 25% OO
                         </svg>
                         View All Repositories on GitHub
                     </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- 3. Production Experience (#experience) -->
-    <section id="experience" class="experience section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Production Track Record</span>
-                <h2 class="section-title">Professional Experience</h2>
-            </div>
-
-            <div class="timeline">
-                <!-- Wipro (Client: Meta) -->
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <div>
-                                <h3 class="role-title">ML Engineer (Client: Meta)</h3>
-                                <p class="company-name">Wipro • Bengaluru, India</p>
-                            </div>
-                            <span class="timeline-date">Jul 2025 – Present</span>
-                        </div>
-                        <div class="role-kpi-bar">
-                            <span class="role-kpi">84.7% Top-5 Recall (+38% rel.)</span>
-                            <span class="role-kpi">100% Release Audit Coverage</span>
-                            <span class="role-kpi">88% Router Top-1 Acc (433 Queues)</span>
-                            <span class="role-kpi">4.2% Walk-Forward OpEx MAPE</span>
-                        </div>
-                        <ul class="timeline-bullets">
-                            <li>Shipped incremental ingestion and hybrid retrieval for an enterprise RAG assistant on <strong>Llama Stack</strong> (1,200+ daily queries): structure-preserving parsers for docs, sheets, and slides with SHA-256 change detection reduced re-embedding volume by <strong>75%</strong>, and parent–child chunking with BM25 + dense retrieval and cross-encoder re-ranking raised top-5 recall from 61.4% (dense-only) to <strong>84.7%</strong> (38% relative).</li>
-                            <li>Co-designed an LLM release-readiness agent (<strong>Llama 4 Scout</strong>) auditing 13 go-live controls (SOX, privacy, QA, UAT) across 9 product portfolios; paired deterministic risk rules with <strong>Pydantic</strong>-constrained evidence checks over open tasks, unmerged code, and missing sign-offs to auto-publish weekly briefs, expanding review coverage from 7% (manual sampling) to <strong>100%</strong> of releases and reducing reporting time by <strong>60%</strong>.</li>
-                            <li>Trained and deployed a two-stage router for ~1,100 support tickets/day (Account Management gate, then per-branch residual DNNs over dense embeddings across 433 queues). Class-weighted focal loss lifted top-1 accuracy from a 40% legacy baseline to <strong>88%</strong> on a forward-time holdout with post-triage leakage features removed, while a temperature-scaled confidence gate auto-routes <strong>68%</strong> of volume at <strong>95%</strong> accuracy with human fallback.</li>
-                            <li>Engineered a hierarchical 12-month OpEx forecasting pipeline (<strong>XGBoost</strong>, seasonal decomposition) across 80+ cost centers, achieving <strong>4.2% MAPE</strong> on walk-forward quarterly holdouts (26% lower error than run-rate baselines) with automated daily variance attribution for Finance.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Coriolis Technologies -->
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <div>
-                                <h3 class="role-title">Project Intern — Applied AI (Multi-Agent Systems)</h3>
-                                <p class="company-name">Coriolis Technologies • Pune, India</p>
-                            </div>
-                            <span class="timeline-date">Jan 2025 – Apr 2025</span>
-                        </div>
-                        <div class="role-kpi-bar">
-                            <span class="role-kpi">64% → 92% Multi-Step Workflow Success</span>
-                            <span class="role-kpi">14 s → 4 s DAG Asyncio Latency</span>
-                            <span class="role-kpi">Llama 3.1 8B on vLLM</span>
-                        </div>
-                        <ul class="timeline-bullets">
-                            <li>Developed a <strong>LangGraph</strong> multi-agent system that plans and executes multi-step workflows across enterprise REST APIs, retrieving top-<i>K</i> endpoint schemas and auth rules at plan time from an embedding index over raw <strong>OpenAPI</strong> specifications instead of loading full specs or hand-writing wrappers.</li>
-                            <li>Orchestrated sub-task routing and <strong>tool calling</strong> via a supervisor agent with strict <strong>Pydantic</strong> schema validation; a 3-attempt self-healing retry loop that feeds validation and execution errors back to the model lifted workflow success from a 64% single-shot baseline to <strong>92%</strong> on a frozen 500-request benchmark.</li>
-                            <li>Reduced end-to-end workflow latency from <strong>14 s to 4 s</strong> with a DAG-based <strong>asyncio</strong> dispatcher that runs independent tool and API calls concurrently; planning ran on a locally hosted <strong>Llama 3.1 8B</strong> model served via <strong>vLLM</strong>.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Algolabs -->
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <div>
-                                <h3 class="role-title">Machine Learning Intern (Computer Vision &amp; Edge AI)</h3>
-                                <p class="company-name">Algolabs • Chennai, India</p>
-                            </div>
-                            <span class="timeline-date">May 2024 – Jul 2024</span>
-                        </div>
-                        <div class="role-kpi-bar">
-                            <span class="role-kpi">~70% Faster Annotation via SAM</span>
-                            <span class="role-kpi">111 FPS YOLOv8-seg (0.78 Mask IoU)</span>
-                            <span class="role-kpi">35+ FPS Jetson Orin Nano INT8 (2.8×)</span>
-                        </div>
-                        <ul class="timeline-bullets">
-                            <li>Built a crack instance-segmentation pipeline for 3D-printed building surfaces: curated polygon masks across <strong>430</strong> high-resolution inspection images in LabelMe (four severity classes: hairline, thin, wide, deep), using patch tiling to preserve fine detail and point-prompted <strong>SAM</strong> proposals with human review to cut annotation time by <strong>~70%</strong>.</li>
-                            <li>Benchmarked <strong>YOLOv8-seg</strong> against <strong>Detectron2</strong> (Mask R-CNN) on Tesla T4: Mask R-CNN traced fine branching cracks more cleanly but ran at 7 FPS, so selected YOLOv8-seg at <strong>111 FPS</strong> (0.82 precision, 0.78 mask IoU) for real-time streaming.</li>
-                            <li>Deployed real-time edge inference via <strong>ONNX</strong> and post-training <strong>TensorRT INT8</strong> quantization in <strong>DeepStream</strong> on NVIDIA Jetson Orin Nano (<strong>35+ FPS</strong>, 2.8&times; over FP32, &lt;0.01 mask-IoU loss), alongside a containerized batch service on <strong>AWS ECS</strong>.</li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </div>
