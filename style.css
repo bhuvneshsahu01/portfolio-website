@@ -1211,3 +1211,49 @@ code, pre {
     padding-top: 2rem;
     border-top: 1px solid var(--border-color);
 }
+
+
+/* ==========================================================================
+   COLLAPSIBLE ARCHIVE DRAWER (#repositories)
+   ========================================================================== */
+.archive-drawer {
+    margin-top: 1.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+.archive-summary {
+    padding: 1rem 1.25rem;
+    font-family: var(--font-mono);
+    font-size: 0.84rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    background: var(--bg-elevated);
+    transition: background-color var(--transition), color var(--transition);
+}
+
+.archive-summary::-webkit-details-marker {
+    display: none;
+}
+
+.archive-summary:hover {
+    color: var(--accent-primary);
+}
+
+.archive-toggle-hint {
+    font-size: 0.76rem;
+    color: var(--accent-primary);
+}
+
+.archive-grid {
+    padding: 1.25rem;
+    margin-bottom: 0;
+}

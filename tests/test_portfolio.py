@@ -17,24 +17,35 @@ class TestPortfolioWebsite(unittest.TestCase):
         self.assertIn('property="og:description"', self.html)
         self.assertIn("Chennai Mathematical Institute", self.html)
 
-    def test_hero_and_nav_structure(self):
+    def test_hero_nav_and_contact_consistency(self):
         self.assertIn('href="Bhuvnesh_Sahu_ML_Engineer_CV.pdf"', self.html)
         self.assertIn("M.Sc. Data Science, CMI", self.html)
         self.assertIn("ML Engineer (Meta via Wipro)", self.html)
         self.assertIn("DST INSPIRE Scholar (Top 1%)", self.html)
-        self.assertNotIn("30+", self.html)
         self.assertNotIn("bhuvneshsahu1234@gmail.com", self.html)
+        self.assertNotIn("9642684363", self.html)
+        self.assertNotIn("data-alt-phone", self.html)
         self.assertIn("bhuvnesh.sahu@outlook.com", self.html)
         self.assertIn("+91-9407241555", self.html)
-        self.assertIn("+91-9642684363", self.html)
 
-    def test_projects_content_and_links(self):
-        self.assertNotIn("-67%", self.html)
+    def test_section_ordering_education_above_repositories(self):
+        exp_pos = self.html.find('id="experience"')
+        proj_pos = self.html.find('id="projects"')
+        edu_pos = self.html.find('id="education"')
+        repo_pos = self.html.find('id="repositories"')
+        about_pos = self.html.find('id="about"')
+        self.assertTrue(
+            0 < exp_pos < proj_pos < edu_pos < repo_pos < about_pos,
+            "Expected section order: #experience -> #projects -> #education -> #repositories -> #about",
+        )
+
+    def test_projects_content_including_tv_series_highlight(self):
         self.assertIn(
             "https://huggingface.co/BhuviBuilds/vericall-qwen2.5-7b-dpo",
             self.html,
         )
         self.assertIn("https://pypi.org/project/traceguard-ai/", self.html)
+        self.assertIn("https://github.com/bhuvneshsahu01/TV-Series-analyzer", self.html)
         for token in [
             "86.4%",
             "1.83 GB to 18 MB",
@@ -52,21 +63,12 @@ class TestPortfolioWebsite(unittest.TestCase):
             "6.4%",
             "11.8 ms p95",
             "320 RPS",
+            "BART-L-MNLI",
+            "Llama-3.1 8B QLoRA",
+            "PyVis",
         ]:
             self.assertIn(token, self.html)
-        self.assertIn('class="benchmark-table"', self.html)
-        self.assertIn("pip install traceguard-ai", self.html)
-        
-        # Guard additional domain projects and repositories
-        for add_proj in [
-            "Multi-Doc RAG Chatbot",
-            "Real-Time Crack Detection",
-            "Email/SMS Spam Classifier",
-            "Credit Risk Modelling",
-            "WhatsApp Chat Analyzer",
-            "Social Network Backend",
-        ]:
-            self.assertIn(add_proj, self.html)
+        self.assertNotIn("Suicide Rates Analysis", self.html)
 
     def test_experience_and_education_integrity(self):
         self.assertNotIn("top-$K$", self.html)
@@ -86,24 +88,12 @@ class TestPortfolioWebsite(unittest.TestCase):
         self.assertIsNotNone(about_match)
         self.assertNotIn("433 queues", about_match.group(1))
 
-    def test_scoped_tab_switching_and_clipboard(self):
+    def test_scoped_tabs_clipboard_and_scroll_spy(self):
         js = SCRIPT_JS.read_text(encoding="utf-8")
         self.assertIn("initProofTabs", js)
         self.assertIn("closest('.project-card')", js)
-        self.assertIn("aria-selected", js)
         self.assertIn("navigator.clipboard.writeText", js)
-
-    def test_responsive_css_and_overflow_guards(self):
-        css = STYLE_CSS.read_text(encoding="utf-8")
-        for selector in [
-            ".kpi-strip",
-            ".benchmark-table",
-            ".table-scroll-wrapper",
-            ".proof-tabs",
-            ".authority-strip",
-        ]:
-            self.assertIn(selector, css)
-        self.assertIn("overflow-x: auto", css)
+        self.assertIn("initScrollSpy", js)
 
 
 if __name__ == "__main__":

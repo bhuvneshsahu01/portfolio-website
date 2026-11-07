@@ -1,1 +1,8 @@
 __pycache__/
+*.py[cod]
+.pytest_cache/
+about.md
+about_2.md
+more_info.md
+CV.txt
+PORTFOLIO_AUDIT_BUNDLE.md
